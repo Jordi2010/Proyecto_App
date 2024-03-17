@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="zionAppSensorial.MainPage">
+
+    <StackLayout VerticalOptions="FillAndExpand"
+                HorizontalOptions="FillAndExpand"
+                BackgroundColor="#E3F2FD"
+                Padding="30">
+
+        <!-- Espacio en blanco para las figuras geométricas -->
+        <BoxView HeightRequest="100" BackgroundColor="Transparent" />
+
+        <!-- Título de bienvenida -->
+        <Label Text="¡Bienvenido!"
+              HorizontalOptions="Center"
+              FontSize="Large"
+              TextColor="#37474F" />
+
+        <!-- Espacio en blanco para las figuras geométricas -->
+        <BoxView HeightRequest="50" BackgroundColor="Transparent" />
+
+        <!-- Botón para ingresar -->
+        <Frame CornerRadius="15"
+              BackgroundColor="#FFCCBC"
+              HorizontalOptions="Center">
+            <Button Text="Ingresar"
+                   WidthRequest="200"
+                   HeightRequest="50"
+                   BackgroundColor="Transparent"
+                   TextColor="#37474F"
+                   FontSize="Large" />
+        </Frame>
+
+        <!-- Espacio en blanco para las figuras geométricas -->
+        <BoxView HeightRequest="100" BackgroundColor="Transparent" />
+
+    </StackLayout>
+
+</ContentPage>
