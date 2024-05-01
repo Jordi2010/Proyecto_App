@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="zionAppSensorial.views.animalviews.Pantalla2">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White">
+            <StackLayout Orientation="Horizontal">
+
+                <ImageButton Source="iconosalida.png" Aspect="Fill" HeightRequest="35" WidthRequest="35" BorderColor="Transparent"
+      VerticalOptions="Center" BackgroundColor="White" Padding="10,25,10,10" Margin="12,0,0,0"/>
+
+            </StackLayout>
+            <Label Text="PUNTAJE" FontSize="25" TextColor="Black" HorizontalOptions="Center" Padding="35"/>
+            <Label Text="0" HorizontalTextAlignment="Center" FontSize="50" TextColor="Black"/>
+            <ImageButton Source="Tortu.jpg" Aspect="Fill" HeightRequest="205" WidthRequest="200" 
+       HorizontalOptions="CenterAndExpand"/>
+
+            <Label Text="Tiene un cuerpo muy fuerte, camina con mucho cuidado y vive por muchos años" 
+       HorizontalTextAlignment="Center" TextColor="Black" Padding="25" FontSize="Body"/>
+            <Button Text="Tortuga" HorizontalOptions="CenterAndExpand" TextColor="Black" BackgroundColor="LightGray" 
+        BorderWidth="2" CornerRadius="15" WidthRequest="200" HeightRequest="50"/>
+            <Button Text="León" HorizontalOptions="CenterAndExpand" TextColor="Black" BackgroundColor="LightGray" 
+        BorderWidth="2" CornerRadius="15" WidthRequest="200" HeightRequest="50"/>
+            <Button Text="Lobo" HorizontalOptions="CenterAndExpand" TextColor="Black" BackgroundColor="LightGray"
+        BorderWidth="2" CornerRadius="15" WidthRequest="200" HeightRequest="50"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

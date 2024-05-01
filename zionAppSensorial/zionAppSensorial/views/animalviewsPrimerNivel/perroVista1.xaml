@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="zionAppSensorial.views.animalviews.Pantalla1">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White">
+            <StackLayout Orientation="Horizontal">
+
+                <ImageButton Source="iconosalida.png" Aspect="Fill" HeightRequest="35" WidthRequest="35" BorderColor="Transparent"
+                  VerticalOptions="Center" BackgroundColor="White" Padding="10,25,10,10" Margin="12,0,0,0"/>
+
+            </StackLayout>
+
+            <Label Text="PUNTAJE" FontSize="25" HorizontalOptions="CenterAndExpand" TextColor="Black"/>
+            <Label Text="0" HorizontalTextAlignment="Center" FontSize="50" TextColor="Black"/>
+            <ImageButton Source="dog.jpg" Aspect="Fill" HeightRequest="215" WidthRequest="180"
+       HorizontalOptions="Center"/>
+
+            <Label Text="Le gusta jugar, también ladrar y cuidar la casa cuando los amos no están" TextColor="Black" 
+       Padding="25" HorizontalTextAlignment="Center" FontSize="Body"/>
+
+            <Button Text="Perro" HorizontalOptions="CenterAndExpand" BackgroundColor="LightGray" TextColor="Black"
+        CornerRadius="15"
+        WidthRequest="200" HeightRequest="50"/>
+
+            <Button Text="Gato" HorizontalOptions="CenterAndExpand" BackgroundColor="LightGray" TextColor="Black"
+        CornerRadius="15"
+        WidthRequest="200" HeightRequest="50"/>
+
+            <Button Text="Tortuga" HorizontalOptions="CenterAndExpand" 
+        BackgroundColor="LightGray" TextColor="Black"
+        CornerRadius="15"
+        WidthRequest="200" HeightRequest="50"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

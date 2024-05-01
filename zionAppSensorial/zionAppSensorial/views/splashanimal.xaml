@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="zionAppSensorial.views.splashviews.splashanimal">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White">
+            <Image Source="splashanimal.png" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"
+       HeightRequest="175" WidthRequest="175"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

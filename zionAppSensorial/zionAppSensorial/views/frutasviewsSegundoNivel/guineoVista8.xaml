@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="zionAppSensorial.views.frutasviews.Pantalla8">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White">
+            <StackLayout Orientation="Horizontal">
+
+                <ImageButton Source="iconosalida.png" Aspect="Fill" HeightRequest="35" WidthRequest="35" BorderColor="Transparent"
+      VerticalOptions="Center" BackgroundColor="White" Padding="10,25,10,10" Margin="12,0,0,0"/>
+
+            </StackLayout>
+            <Label Text="PUNTAJE" TextColor="Black" FontSize="25" HorizontalOptions="Center" Padding="35" HorizontalTextAlignment="Center"/>
+            <Label Text="0" HorizontalTextAlignment="Center" FontSize="50" TextColor="Black"/>
+            <ImageButton Source="guineoo.jpg" Aspect="Fill" HeightRequest="250" WidthRequest="250" HorizontalOptions="Center"/>
+
+            <Label Text="Amarillo por fuera y blanco por dentro, tienes que pelarlo para comerlo"
+       TextColor="Black" FontSize="Body" HorizontalTextAlignment="Center" Padding="25"/>
+            <Button Text="Aguacate" HorizontalOptions="CenterAndExpand" BackgroundColor="LightGray" TextColor="Black"
+        CornerRadius="15" WidthRequest="200" HeightRequest="50"/>
+            <Button Text="Guineo" HorizontalOptions="CenterAndExpand" BackgroundColor="LightGray" TextColor="Black"
+        CornerRadius="15" WidthRequest="200" HeightRequest="50"/>
+            <Button Text="Sandia" HorizontalOptions="CenterAndExpand" BackgroundColor="LightGray" TextColor="Black"
+        CornerRadius="15" WidthRequest="200" HeightRequest="50"/>
+            <Button Text="Melón" HorizontalOptions="CenterAndExpand" BackgroundColor="LightGray" TextColor="Black"
+        CornerRadius="15" WidthRequest="200" HeightRequest="50"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

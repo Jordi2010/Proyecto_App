@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="zionAppSensorial.views.frutasviews.Pantalla10">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White">
+            <StackLayout Orientation="Horizontal">
+
+                <ImageButton Source="iconosalida.png" Aspect="Fill" HeightRequest="35" WidthRequest="35" BorderColor="Transparent"
+      VerticalOptions="Center" BackgroundColor="White" Padding="10,25,10,10" Margin="12,0,0,0"/>
+
+            </StackLayout>
+            <Label Text="PUNTAJE" FontSize="25" TextColor="Black" HorizontalOptions="Center" Padding="35" 
+       HorizontalTextAlignment="Center"/>
+            <Label Text="0" HorizontalTextAlignment="Center" FontSize="50" TextColor="Black"/>
+            <ImageButton Source="mandarina.jpg" Aspect="Fill" HeightRequest="225" WidthRequest="200" HorizontalOptions="Center"/>
+
+            <Label Text="La calabaza, me ha copiado el color, la naranja el sabor, pero sobre todo yo soy la mejor" 
+       TextColor="Black" FontSize="Body" Padding="25"/>
+            <Button Text="Mandarina" HorizontalOptions="CenterAndExpand" BackgroundColor="LightGray" TextColor="Black"
+        CornerRadius="15" WidthRequest="200" HeightRequest="50"/>
+            <Button Text="Zanahoria" HorizontalOptions="CenterAndExpand" BackgroundColor="LightGray" TextColor="Black"
+        CornerRadius="15" WidthRequest="200" HeightRequest="50"/>
+            <Button Text="Uva" HorizontalOptions="CenterAndExpand" BackgroundColor="LightGray" TextColor="Black"
+        CornerRadius="15" WidthRequest="200" HeightRequest="50"/>
+            <Button Text="Pera" HorizontalOptions="CenterAndExpand" BackgroundColor="LightGray" TextColor="Black"
+        CornerRadius="15" WidthRequest="200" HeightRequest="50"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
