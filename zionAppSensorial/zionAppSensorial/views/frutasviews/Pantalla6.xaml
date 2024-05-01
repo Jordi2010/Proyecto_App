@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="zionAppSensorial.views.frutasviews.Pantalla6">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White">
+            <StackLayout Orientation="Horizontal">
+
+                <ImageButton Source="iconosalida.png" Aspect="Fill" HeightRequest="35" WidthRequest="35" BorderColor="Transparent"
+      VerticalOptions="Center" BackgroundColor="White" Padding="10,25,10,10" Margin="12,0,0,0"/>
+
+            </StackLayout>
+            <Label Text="PUNTAJE" TextColor="Black" FontSize="25" HorizontalOptions="Center" HorizontalTextAlignment="Center" 
+           Padding="35"/>
+            <Label Text="0" HorizontalTextAlignment="Center" FontSize="50" TextColor="Black"/>
+            <ImageButton Source="manzana.jpg" Aspect="Fill" HeightRequest="215" WidthRequest="230" 
+           HorizontalOptions="Center" VerticalOptions="Center" />
+
+            <Label Text="Soy blanca por dentro y roja por fuera, soy dulde y sabrosa, no hay quien no me quiera"
+                TextColor="Black" HorizontalTextAlignment="Center" Padding="25" FontSize="Body"/>
+            <Button Text="Pera" TextColor="Black" BackgroundColor="LightGray" HorizontalOptions="CenterAndExpand"
+                CornerRadius="15" WidthRequest="200" HeightRequest="50"/>
+            <Button Text="Manzana" TextColor="Black" BackgroundColor="LightGray" HorizontalOptions="CenterAndExpand" 
+                CornerRadius="15" WidthRequest="200" HeightRequest="50"/>
+            <Button Text="Zanahoria" TextColor="Black" BackgroundColor="LightGray" HorizontalOptions="CenterAndExpand"
+                CornerRadius="15" WidthRequest="200" HeightRequest="50"/>
+            <Button Text="Tomate" TextColor="Black" BackgroundColor="LightGray" HorizontalOptions="CenterAndExpand"
+                CornerRadius="15" WidthRequest="200" HeightRequest="50"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

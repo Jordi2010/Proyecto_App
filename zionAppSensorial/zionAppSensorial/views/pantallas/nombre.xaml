@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="zionAppSensorial.views.pantallas.nombre">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White">
+            <Image Source="usuario.jpg" Aspect="Fill" HeightRequest="200" WidthRequest="150" VerticalOptions="Center" 
+       HorizontalOptions="Center"/>
+            <Label Text="Introduce tu nombre" TextColor="Black" FontSize="30" HorizontalOptions="Center"/>
+            <Label Text="Antes de empezar, ingresa tu nombre para ir guardando tu progreso y que pararezca en la tabla de puntaje" 
+       VerticalOptions="Center" HorizontalOptions="CenterAndExpand" 
+       TextColor="Black"/>
+
+            <Editor TextColor="Black" Placeholder="Nombre" PlaceholderColor="Gray" BackgroundColor="Pink"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

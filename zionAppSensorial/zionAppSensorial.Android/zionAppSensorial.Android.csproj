@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -84,14 +84,33 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\icon.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Resources\drawable\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\zionAppSensorial\zionAppSensorial.csproj">
       <Project>{049C3CDF-16BB-42DC-8CB7-54E6D73F6CB9}</Project>
       <Name>zionAppSensorial</Name>
     </ProjectReference>
   </ItemGroup>
- <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\astucia.jpg" />
+    <AndroidResource Include="Resources\drawable\dog.jpg" />
+    <AndroidResource Include="Resources\drawable\Elephant.jpg" />
+    <AndroidResource Include="Resources\drawable\fresabig.jpg" />
+    <AndroidResource Include="Resources\drawable\guineoo.jpg" />
+    <AndroidResource Include="Resources\drawable\iconosalida.png" />
+    <AndroidResource Include="Resources\drawable\ImagenFondo.png" />
+    <AndroidResource Include="Resources\drawable\lapizbig.jpg" />
+    <AndroidResource Include="Resources\drawable\majestad.jpg" />
+    <AndroidResource Include="Resources\drawable\mandarina.jpg" />
+    <AndroidResource Include="Resources\drawable\manzana.jpg" />
+    <AndroidResource Include="Resources\drawable\mesabig.jpg" />
+    <AndroidResource Include="Resources\drawable\MyIcono.png" />
+    <AndroidResource Include="Resources\drawable\reyleon.jpg" />
+    <AndroidResource Include="Resources\drawable\splashanimal.png" />
+    <AndroidResource Include="Resources\drawable\tefono.jpg" />
+    <AndroidResource Include="Resources\drawable\tigera.jpg" />
+    <AndroidResource Include="Resources\drawable\Tortu.jpg" />
+    <AndroidResource Include="Resources\drawable\usuario.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

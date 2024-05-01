@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="zionAppSensorial.views.objetosviews.Pantalla11">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White">
+            <StackLayout Orientation="Horizontal">
+
+                <ImageButton Source="iconosalida.png" Aspect="Fill" HeightRequest="35" WidthRequest="35" BorderColor="Transparent"
+      VerticalOptions="Center" BackgroundColor="White" Padding="10,25,10,10" Margin="12,0,0,0"/>
+
+            </StackLayout>
+            <Label Text="PUNTAJE" FontSize="25" TextColor="Black" HorizontalOptions="Center" Padding="35"/>
+            <Label Text="0" HorizontalTextAlignment="Center" FontSize="50" TextColor="Black"/>
+            <ImageButton Source="mesabig.jpg" Aspect="Fill" HeightRequest="200" HorizontalOptions="Center" WidthRequest="235"/>
+
+            <Label Text="Estoy en la casa y también en la escuela, tengo cuatro patas y un mantel de tela" 
+       TextColor="Black" FontSize="Body" Padding="25" HorizontalTextAlignment="Center"/>
+            <Button Text="Libro" HorizontalOptions="CenterAndExpand" BackgroundColor="LightGray" TextColor="Black"
+        CornerRadius="15" WidthRequest="200" HeightRequest="50"/>
+            <Button Text="Regla" HorizontalOptions="CenterAndExpand" BackgroundColor="LightGray" TextColor="Black"
+        CornerRadius="15" WidthRequest="200" HeightRequest="50"/>
+            <Button Text="Lapiz" HorizontalOptions="CenterAndExpand" BackgroundColor="LightGray" TextColor="Black"
+        CornerRadius="15" WidthRequest="200" HeightRequest="50"/>
+            <Button Text="Mesa" HorizontalOptions="CenterAndExpand" BackgroundColor="LightGray" TextColor="Black"
+        CornerRadius="15" WidthRequest="200" HeightRequest="50"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

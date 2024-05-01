@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="zionAppSensorial.views.animalviews.Panatalla3">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White">
+            <StackLayout Orientation="Horizontal">
+
+                <ImageButton Source="iconosalida.png" Aspect="Fill" HeightRequest="35" WidthRequest="35" BorderColor="Transparent"
+      VerticalOptions="Center" BackgroundColor="White" Padding="10,25,10,10" Margin="12,0,0,0"/>
+
+            </StackLayout>
+            <Label Text="PUNTAJE" FontSize="25" TextColor="Black" HorizontalOptions="Center" Padding="35"/>
+            <Label Text="0" HorizontalTextAlignment="Center" FontSize="50" TextColor="Black"/>
+            <ImageButton Source="astucia.jpg" Aspect="Fill" HeightRequest="260" HorizontalOptions="Center" WidthRequest="225"/>
+
+            <Label Text="Es adorable, es muy astuto y tiene 9 vidas"
+       TextColor="Black" HorizontalOptions="Center" Padding="50" HorizontalTextAlignment="Center" FontSize="Body"/>
+            <Button Text="Gato" HorizontalOptions="CenterAndExpand" TextColor="Black" BackgroundColor="LightGray"
+        BorderWidth="2" CornerRadius="15" WidthRequest="200" HeightRequest="50"/>
+            <Button Text="León" HorizontalOptions="CenterAndExpand" TextColor="Black" BackgroundColor="LightGray"
+        BorderWidth="2" CornerRadius="15" WidthRequest="200" HeightRequest="50"/>
+            <Button Text="Amadillo" HorizontalOptions="CenterAndExpand" TextColor="Black" BackgroundColor="LightGray"
+        BorderWidth="2" CornerRadius="15" WidthRequest="200" HeightRequest="50"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

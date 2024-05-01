@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="zionAppSensorial.views.objetosviews.Pantalla13">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White">
+            <StackLayout Orientation="Horizontal">
+
+                <ImageButton Source="iconosalida.png" Aspect="Fill" HeightRequest="35" WidthRequest="35" BorderColor="Transparent"
+      VerticalOptions="Center" BackgroundColor="White" Padding="10,25,10,10" Margin="12,0,0,0"/>
+
+            </StackLayout>
+            <Label Text="PUNTAJE" FontSize="25" TextColor="Black" HorizontalTextAlignment="Center" Padding="35"/>
+            <Label Text="0" HorizontalTextAlignment="Center" FontSize="50" TextColor="Black"/>
+            <ImageButton Source="tigera.jpg" Aspect="Fill" HeightRequest="225" WidthRequest="230" HorizontalOptions="Center"/>
+
+            <Label Text="Tengo ojo y no veo, tengo pies y no camino, tengo boca y no como" TextColor="Black" 
+       Padding="25" FontSize="Body" HorizontalTextAlignment="Center"/>
+            <Button Text="Mochila" HorizontalOptions="CenterAndExpand" BackgroundColor="LightGray" TextColor="Black"
+        CornerRadius="15" WidthRequest="200" HeightRequest="50"/>
+            <Button Text="Botella" HorizontalOptions="CenterAndExpand" BackgroundColor="LightGray" TextColor="Black"
+        CornerRadius="15" WidthRequest="200" HeightRequest="50"/>
+            <Button Text="Botella" HorizontalOptions="CenterAndExpand" BackgroundColor="LightGray" TextColor="Black"
+        CornerRadius="15" WidthRequest="200" HeightRequest="50"/>
+            <Button Text="Tijera" HorizontalOptions="CenterAndExpand" BackgroundColor="LightGray" TextColor="Black"
+        CornerRadius="15" WidthRequest="200" HeightRequest="50"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
