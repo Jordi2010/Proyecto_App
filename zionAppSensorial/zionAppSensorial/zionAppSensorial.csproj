@@ -17,52 +17,97 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="views\animalviews\Panatalla3.xaml">
+    <Compile Update="views\animalviewsPrimerNivel\gatoVista3.xaml.cs">
+      <DependentUpon>gatoVista3.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="views\animalviewsPrimerNivel\leonVista4.xaml.cs">
+      <DependentUpon>leonVista4.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="views\animalviewsPrimerNivel\elefanteVista5.xaml.cs">
+      <DependentUpon>elefanteVista5.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="views\animalviewsPrimerNivel\tortugaVista2.xaml.cs">
+      <DependentUpon>tortugaVista2.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="views\animalviewsPrimerNivel\perroVista1.xaml.cs">
+      <DependentUpon>perroVista1.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="views\frutasviewsSegundoNivel\mandarinaVista10.xaml.cs">
+      <DependentUpon>mandarinaVista10.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="views\frutasviewsSegundoNivel\manzanaVista6.xaml.cs">
+      <DependentUpon>manzanaVista6.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="views\frutasviewsSegundoNivel\fresaVista9.xaml.cs">
+      <DependentUpon>fresaVista9.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="views\frutasviewsSegundoNivel\guineoVista8.xaml.cs">
+      <DependentUpon>guineoVista8.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="views\frutasviewsSegundoNivel\piñaVista7.xaml.cs">
+      <DependentUpon>piñaVista7.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="views\objetosviewsTercerNivel\mesaVista11.xaml.cs">
+      <DependentUpon>mesaVista11.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="views\objetosviewsTercerNivel\lapizVista12.xaml.cs">
+      <DependentUpon>lapizVista12.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="views\objetosviewsTercerNivel\telefonoVista14.xaml.cs">
+      <DependentUpon>telefonoVista14.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="views\objetosviewsTercerNivel\tigeraVista13.xaml.cs">
+      <DependentUpon>tigeraVista13.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="views\animalviewsPrimerNivel\gatoVista3.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="views\animalviews\Pantalla1.xaml">
+    <EmbeddedResource Update="views\animalviewsPrimerNivel\perroVista1.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="views\animalviews\Pantalla2.xaml">
+    <EmbeddedResource Update="views\animalviewsPrimerNivel\tortugaVista2.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="views\animalviews\Pantalla4.xaml">
+    <EmbeddedResource Update="views\animalviewsPrimerNivel\leonVista4.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="views\animalviews\Pantalla5.xaml">
+    <EmbeddedResource Update="views\animalviewsPrimerNivel\elefanteVista5.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="views\exampleView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="views\frutasviews\Pantalla10.xaml">
+    <EmbeddedResource Update="views\frutasviewsSegundoNivel\mandarinaVista10.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="views\frutasviews\Pantalla6.xaml">
+    <EmbeddedResource Update="views\frutasviewsSegundoNivel\manzanaVista6.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="views\frutasviews\Pantalla7.xaml">
+    <EmbeddedResource Update="views\frutasviewsSegundoNivel\piñaVista7.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="views\frutasviews\Pantalla8.xaml">
+    <EmbeddedResource Update="views\frutasviewsSegundoNivel\guineoVista8.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="views\frutasviews\Pantalla9.xaml">
+    <EmbeddedResource Update="views\frutasviewsSegundoNivel\fresaVista9.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="views\objetosviews\Pantalla11.xaml">
+    <EmbeddedResource Update="views\objetosviewsTercerNivel\mesaVista11.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="views\objetosviews\Pantalla12.xaml">
+    <EmbeddedResource Update="views\objetosviewsTercerNivel\lapizVista12.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="views\objetosviews\Pantalla13.xaml">
+    <EmbeddedResource Update="views\objetosviewsTercerNivel\tigeraVista13.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="views\objetosviews\Pantalla14.xaml">
+    <EmbeddedResource Update="views\objetosviewsTercerNivel\telefonoVista14.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="views\pantallas\inicio.xaml">
+    <EmbeddedResource Update="views\inicio.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="views\pantallas\menu.xaml">
@@ -74,10 +119,10 @@
     <EmbeddedResource Update="views\pantallas\nombre.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="views\pantallas\splashanimal.xaml">
+    <EmbeddedResource Update="views\splashanimal.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="views\pantallas\splashinicio.xaml">
+    <EmbeddedResource Update="views\splashinicio.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
