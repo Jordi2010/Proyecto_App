@@ -1,0 +1,47 @@
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="zionAppSensorial.views.pantallas.tutorialVista">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White" Padding="0">
+            <!-- Imagen en la esquina superior izquierda -->
+            <ImageButton Source="iconosalida.png" Aspect="AspectFit" HeightRequest="40" WidthRequest="50" BorderColor="Transparent"
+                 BackgroundColor="White" Padding="10"
+                 HorizontalOptions="Start" VerticalOptions="Start"/>
+
+            <!-- Encabezado -->
+            <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="Start">
+                <Image Source="signo.png" Aspect="AspectFit" HorizontalOptions="Center" VerticalOptions="Start" />
+                <Label Text="¿Cómo Jugar?" FontSize="Body" TextColor="Blue" HorizontalOptions="Center" FontAttributes="Bold" VerticalOptions="Start"/>
+            </StackLayout>
+
+            <!-- Contenido -->
+            <StackLayout Orientation="Horizontal">
+                <!-- Columna izquierda -->
+                <StackLayout Padding="10,0,10,0">
+                    <Label Text="             Paso 1: 
+                           Selecciona Jugar" FontSize="13" TextColor="Black" HorizontalOptions="Center" FontAttributes="Bold"/>
+                    <Image Source="comoJugar.jpg" Aspect="AspectFit" HorizontalOptions="Center" HeightRequest="150"/>
+                    <Label Text="             Paso 2: 
+                           Introduce tu nombre" FontSize="13" TextColor="Black" HorizontalOptions="Center" FontAttributes="Bold"/>
+                    <Image Source="user.jpg" Aspect="AspectFit" HorizontalOptions="Center" HeightRequest="150"/>
+                    <Label Text="             Paso 3: 
+                           Selecciona la sección" FontSize="13" TextColor="Black" HorizontalOptions="Center" FontAttributes="Bold"/>
+                    <Image Source="seccion.jpg" Aspect="AspectFit" HorizontalOptions="Center" HeightRequest="140"/>
+                </StackLayout>
+
+                <!-- Columna derecha -->
+                <StackLayout Padding="40,0,0,0">
+                    <Label Text="            Paso 4: 
+                           Selecciona el nivel" FontSize="13" TextColor="Black" HorizontalOptions="Center" FontAttributes="Bold"/>
+                    <Image Source="niveless.jpg" Aspect="AspectFit" HorizontalOptions="Center" HeightRequest="150"/>
+                    <Label Text="            Paso 5: 
+                           Selecciona tu respuesta" FontSize="13" TextColor="Black" HorizontalOptions="Center" FontAttributes="Bold"/>
+                    <Image Source="respuesta.jpg" Aspect="AspectFit" HorizontalOptions="Center" HeightRequest="150"/>
+                    <Label Text="            Paso 6: 
+                           Ve tu puntaje en la tabla" FontSize="13" TextColor="Black" HorizontalOptions="Center" FontAttributes="Bold"/>
+                    <Image Source="tablaPuntos.jpg" Aspect="AspectFit" HorizontalOptions="Center" HeightRequest="140"/>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
