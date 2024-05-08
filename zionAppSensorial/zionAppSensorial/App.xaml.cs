@@ -1,11 +1,6 @@
 ﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-using zionAppSensorial.views.animalesViewsTercerNivel;
-using zionAppSensorial.views.animalviewsPrimerNivel;
-using zionAppSensorial.views.frutasViewsTercerNivel;
-using zionAppSensorial.views.objetosViewsTercerNivel;
-using zionAppSensorial.views.pantallas;
 
 namespace zionAppSensorial
 {
@@ -15,7 +10,7 @@ namespace zionAppSensorial
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new inicio());
+            MainPage = new NavigationPage(new MainPage());
         }
 
         protected override void OnStart()

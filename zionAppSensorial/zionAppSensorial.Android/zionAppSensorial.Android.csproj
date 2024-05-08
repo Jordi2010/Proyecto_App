@@ -84,9 +84,7 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\icon.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
   </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\aguila.jpg" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\zionAppSensorial\zionAppSensorial.csproj">
       <Project>{049C3CDF-16BB-42DC-8CB7-54E6D73F6CB9}</Project>
@@ -113,40 +111,6 @@
     <AndroidResource Include="Resources\drawable\tigera.jpg" />
     <AndroidResource Include="Resources\drawable\Tortu.jpg" />
     <AndroidResource Include="Resources\drawable\usuario.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\avestruz.jpg" />
-    <AndroidResource Include="Resources\drawable\ciruela.jpg" />
-    <AndroidResource Include="Resources\drawable\comoJugar.jpg" />
-    <AndroidResource Include="Resources\drawable\gallo.jpg" />
-    <AndroidResource Include="Resources\drawable\granadilla.jpg" />
-    <AndroidResource Include="Resources\drawable\guayaba.jpg" />
-    <AndroidResource Include="Resources\drawable\kiwi.jpg" />
-    <AndroidResource Include="Resources\drawable\meta.jpg" />
-    <AndroidResource Include="Resources\drawable\niveless.jpg" />
-    <AndroidResource Include="Resources\drawable\pavoReal.jpg" />
-    <AndroidResource Include="Resources\drawable\perico.jpg" />
-    <AndroidResource Include="Resources\drawable\respuesta.jpg" />
-    <AndroidResource Include="Resources\drawable\seccion.jpg" />
-    <AndroidResource Include="Resources\drawable\signo.png" />
-    <AndroidResource Include="Resources\drawable\tablaPuntos.jpg" />
-    <AndroidResource Include="Resources\drawable\toronja.jpg" />
-    <AndroidResource Include="Resources\drawable\user.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\espejo.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\candado.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\lupaimg.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\pipa.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\trompo.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>
