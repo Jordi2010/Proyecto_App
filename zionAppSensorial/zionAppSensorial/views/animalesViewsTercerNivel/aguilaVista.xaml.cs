@@ -16,5 +16,5 @@ namespace zionAppSensorial.views.animalesViewsTercerNivel
 		{
 			InitializeComponent ();
 		}
-	}
+    }
 }

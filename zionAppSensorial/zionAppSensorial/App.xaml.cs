@@ -15,7 +15,7 @@ namespace zionAppSensorial
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new inicio());
+            MainPage = new NavigationPage(new aguilaVista());
         }
 
         protected override void OnStart()
