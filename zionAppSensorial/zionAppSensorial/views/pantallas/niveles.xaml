@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="zionAppSensorial.views.pantallas.niveles">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White">
+            <Image Source="splashanimal.png" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" 
+       HeightRequest="225" WidthRequest="225"/>
+            <Button Text="Fácil" TextColor="Black" BackgroundColor="White" WidthRequest="190" HeightRequest="60"
+        CornerRadius="15" BorderWidth="1" BorderColor="Green" HorizontalOptions="Center"/>
+            <Button Text="Medio" TextColor="Black" BackgroundColor="White" WidthRequest="190" HeightRequest="60"
+        CornerRadius="15" BorderWidth="1" BorderColor="Green" HorizontalOptions="Center"/>
+            <Button Text="Difícil" TextColor="Black" BackgroundColor="White" WidthRequest="190" HeightRequest="60" 
+        CornerRadius="15" BorderWidth="1" BorderColor="Green" HorizontalOptions="Center"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

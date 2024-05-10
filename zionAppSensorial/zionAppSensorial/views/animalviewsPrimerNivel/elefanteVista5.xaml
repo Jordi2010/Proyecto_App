@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="zionAppSensorial.views.animalviews.Pantalla5">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White">
+            <StackLayout Orientation="Horizontal">
+
+                <ImageButton Source="iconosalida.png" Aspect="Fill" HeightRequest="35" WidthRequest="35" BorderColor="Transparent"
+      VerticalOptions="Center" BackgroundColor="White" Padding="10,25,10,10" Margin="12,0,0,0"/>
+
+            </StackLayout>
+            <Label Text="PUNTAJE" FontSize="25" TextColor="Black" HorizontalOptions="Center" Padding="35" HorizontalTextAlignment="Center"/>
+            <Label Text="0" HorizontalTextAlignment="Center" FontSize="50" TextColor="Black"/>
+            <ImageButton Source="Elephant.jpg" Aspect="Fill" HeightRequest="200" WidthRequest="240" HorizontalOptions="Center"/>
+
+            <Label Text="Es enorme, tiene una trompa larga y escucha muy bien" 
+        TextColor="Black" FontSize="Body" HorizontalTextAlignment="Center" Padding="35"/>
+            <Button Text="Elefante" HorizontalOptions="CenterAndExpand" BackgroundColor="LightGray" TextColor="Black"
+         BorderWidth="2" CornerRadius="15" WidthRequest="200" HeightRequest="50"/>
+            <Button Text="El mono" HorizontalOptions="CenterAndExpand" BackgroundColor="LightGray" TextColor="Black"
+         BorderWidth="2" CornerRadius="15" WidthRequest="200" HeightRequest="50"/>
+            <Button Text="Ardilla" HorizontalOptions="CenterAndExpand" BackgroundColor="LightGray" TextColor="Black"
+         BorderWidth="2" CornerRadius="15" WidthRequest="200" HeightRequest="50"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
