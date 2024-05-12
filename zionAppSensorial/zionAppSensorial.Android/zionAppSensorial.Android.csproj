@@ -140,5 +140,24 @@
     <AndroidResource Include="Resources\drawable\trompo.jpg" />
     <AndroidResource Include="Resources\drawable\user.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\bananaN2.png" />
+    <AndroidResource Include="Resources\drawable\bolsoN2.jpg" />
+    <AndroidResource Include="Resources\drawable\cinturon2.png" />
+    <AndroidResource Include="Resources\drawable\duraznoN2.png" />
+    <AndroidResource Include="Resources\drawable\guepardoN2.png" />
+    <AndroidResource Include="Resources\drawable\imgdificultades.png" />
+    <AndroidResource Include="Resources\drawable\imgfelicidades.jpg" />
+    <AndroidResource Include="Resources\drawable\imgpuntaje.jpg" />
+    <AndroidResource Include="Resources\drawable\imgsecciones.png" />
+    <AndroidResource Include="Resources\drawable\laptopN2.jpg" />
+    <AndroidResource Include="Resources\drawable\LeonN2.jpg" />
+    <AndroidResource Include="Resources\drawable\mangoN2.jpg" />
+    <AndroidResource Include="Resources\drawable\melonN2.jpg" />
+    <AndroidResource Include="Resources\drawable\mochilaN2.png" />
+    <AndroidResource Include="Resources\drawable\pumaN2.jpg" />
+    <AndroidResource Include="Resources\drawable\telefonoN2.png" />
+    <AndroidResource Include="Resources\drawable\tigreN2.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>
