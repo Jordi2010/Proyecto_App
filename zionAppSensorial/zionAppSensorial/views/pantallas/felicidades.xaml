@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="zionAppSensorial.views.pantallas.felicidades">
+    <ContentPage.Content>
+        <Frame BackgroundColor="White"
+      CornerRadius="5"
+      Padding="20">
+            <StackLayout VerticalOptions="Center">
+                <Image Source="imgfelicidades.jpg" 
+               HorizontalOptions="Center" 
+               VerticalOptions="Center" />
+
+                <Label Text="Has ganado y completado exitosamente esta dificultad, obteniendo un total de 500 puntos"
+               FontSize="24"
+               FontAttributes="Bold"
+               TextColor="Black"
+               HorizontalOptions="Center" />
+
+                <ImageButton Source="imgpuntaje.jpg" Aspect="Fill" HeightRequest="68" WidthRequest="328"
+                     HorizontalOptions="Center"
+                     />
+
+                <ImageButton Source="imgdificultades.png" Aspect="Fill" HeightRequest="68" WidthRequest="328"
+                     HorizontalOptions="Center"
+                     />
+
+                <ImageButton Source="imgsecciones.png" Aspect="Fill" HeightRequest="68" WidthRequest="328"
+                     HorizontalOptions="Center"
+                     />
+            </StackLayout>
+        </Frame>
+    </ContentPage.Content>
+</ContentPage>
