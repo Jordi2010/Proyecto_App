@@ -14,7 +14,18 @@ namespace zionAppSensorial.views.pantallas
     {
         public inicio()
         {
+            // Eliminar el botón de retroceso por defecto
+            NavigationPage.SetHasBackButton(this, false);
             InitializeComponent();
+        }
+       
+        async void OnPlayButtonClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new menu());
+        }
+        async void OnHowToPlayButtonClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new tutorialVista());
         }
     }
 }

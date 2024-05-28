@@ -4,11 +4,11 @@
              x:Class="zionAppSensorial.views.pantallas.tablaPuntajes">
     <ContentPage.Content>
         <StackLayout BackgroundColor="White" Padding="20">
-            <StackLayout HorizontalOptions="Center">
+            <StackLayout HorizontalOptions="Start">
                 <Image Source="meta.png" Aspect="AspectFit" HeightRequest="100" WidthRequest="100"/>
             </StackLayout>
-            <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="StartAndExpand">
-                <Label Text="Tabla de Puntajes" FontSize="25" TextColor="Black" HorizontalOptions="Center"/>
+            <StackLayout HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand">
+                <Label Text="Tabla de Puntajes" FontSize="25" TextColor="Black" HorizontalOptions="Start"/>
                 <Frame CornerRadius="10" BorderColor="LightGray" HasShadow="True">
                     <TableView Intent="Data" BackgroundColor="Transparent" Margin="0">
                         <TableRoot>
@@ -25,15 +25,14 @@
                                         <Label Text="0" FontSize="18" TextColor="Black" HorizontalOptions="EndAndExpand"/>
                                     </StackLayout>
                                 </ViewCell>
-                                <!-- se puede agregar más filas -->
                             </TableSection>
                         </TableRoot>
                     </TableView>
                 </Frame>
             </StackLayout>
-            <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="EndAndExpand" Padding="10">
+            <StackLayout HorizontalOptions="StartAndExpand" VerticalOptions="EndAndExpand" Padding="10">
                 <Button Text="Volver a las secciones" HorizontalOptions="CenterAndExpand" TextColor="Black" BackgroundColor="LightBlue"
-                        BorderWidth="2" CornerRadius="18" WidthRequest="300" HeightRequest="50"/>
+                        BorderWidth="2" CornerRadius="18" WidthRequest="300" HeightRequest="50" Clicked="OnSeccionesClickedBack" />
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>

@@ -1,30 +1,47 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="zionAppSensorial.views.frutasviews.Pantalla7">
+             x:Class="zionAppSensorial.views.frutasviews.Pantalla7"
+             xmlns:vm="clr-namespace:zionAppSensorial.ViewModels">
+
+    <ContentPage.BindingContext>
+        <vm:Pantalla7ViewModel />
+    </ContentPage.BindingContext>
+
     <ContentPage.Content>
         <StackLayout BackgroundColor="White">
             <StackLayout Orientation="Horizontal">
 
-                <ImageButton Source="iconosalida.png" Aspect="Fill" HeightRequest="35" WidthRequest="35" BorderColor="Transparent"
-      VerticalOptions="Center" BackgroundColor="White" Padding="10,25,10,10" Margin="12,0,0,0"/>
+                <StackLayout HorizontalOptions="Start">
+                    <ImageButton Source="iconosalida.png" 
+                  Aspect="Fill" 
+                  HeightRequest="35" 
+                  WidthRequest="35" 
+                  BorderColor="Transparent"
+                  BackgroundColor="White" 
+                  Padding="0" 
+                  Margin="12,0,0,0" 
+                 Clicked="OnExitButtonClicked"/>
+                </StackLayout>
 
             </StackLayout>
             <Label Text="PUNTAJE" FontSize="25" TextColor="Black" HorizontalOptions="Center" HorizontalTextAlignment="Center"
                 Padding="35"/>
             <Label Text="0" HorizontalTextAlignment="Center" FontSize="50" TextColor="Black"/>
-            <ImageButton Source="majestad.jpg" Aspect="Fill" HeightRequest="235" WidthRequest="185" HorizontalOptions="Center"/>
+            <ImageButton Source="majestad.jpg" Aspect="Fill" HeightRequest="215" WidthRequest="230" 
+              HorizontalOptions="Center" VerticalOptions="Center" 
+              Command="{Binding ImageClickedCommand}"/>
 
             <Label Text="Tiene escamas pero no es pez, tiene corona pero no es un rey"
                 TextColor="Black" HorizontalTextAlignment="Center" Padding="25" FontSize="Body"/>
-            <Button Text="Manzana" TextColor="Black" BackgroundColor="LightGray" HorizontalOptions="CenterAndExpand"
-                CornerRadius="15" WidthRequest="200" HeightRequest="50"/>
-            <Button Text="Piña" TextColor="Black" BackgroundColor="LightGray" HorizontalOptions="CenterAndExpand"
-                CornerRadius="15" WidthRequest="200" HeightRequest="50"/>
-            <Button Text="Uva" TextColor="Black" BackgroundColor="LightGray" HorizontalOptions="CenterAndExpand"
-                CornerRadius="15" WidthRequest="200" HeightRequest="50"/>
-            <Button Text="Naranja" TextColor="Black" BackgroundColor="LightGray" HorizontalOptions="CenterAndExpand"
-                CornerRadius="15" WidthRequest="200" HeightRequest="50"/>
+            <Button Text="Manzana" TextColor="Black" BackgroundColor="{Binding ManzanaButtonColor}" HorizontalOptions="CenterAndExpand"
+                CornerRadius="15" WidthRequest="200" HeightRequest="50" Command="{Binding IncorrectButtonCommand}" CommandParameter="Manzana"/>
+            <Button Text="Piña" TextColor="Black" BackgroundColor="{Binding PiñaButtonColor}" HorizontalOptions="CenterAndExpand"
+                CornerRadius="15" WidthRequest="200" HeightRequest="50" Command="{Binding CorrectButtonCommand}"/>
+            <Button Text="Uva" TextColor="Black" BackgroundColor="{Binding UvaButtonColor}" HorizontalOptions="CenterAndExpand"
+                CornerRadius="15" WidthRequest="200" HeightRequest="50" Command="{Binding IncorrectButtonCommand}" CommandParameter="Uva"/>
+            <Button Text="Naranja" TextColor="Black" BackgroundColor="{Binding NaranjaButtonColor}" HorizontalOptions="CenterAndExpand"
+                CornerRadius="15" WidthRequest="200" HeightRequest="50" Command="{Binding IncorrectButtonCommand}" CommandParameter="Naranja"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

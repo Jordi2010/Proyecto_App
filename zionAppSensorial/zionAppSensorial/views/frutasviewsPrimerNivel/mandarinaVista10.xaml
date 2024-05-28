@@ -5,26 +5,33 @@
     <ContentPage.Content>
         <StackLayout BackgroundColor="White">
             <StackLayout Orientation="Horizontal">
-
-                <ImageButton Source="iconosalida.png" Aspect="Fill" HeightRequest="35" WidthRequest="35" BorderColor="Transparent"
-      VerticalOptions="Center" BackgroundColor="White" Padding="10,25,10,10" Margin="12,0,0,0"/>
-
+                <StackLayout HorizontalOptions="Start">
+                    <ImageButton Source="iconosalida.png" 
+                                 Aspect="Fill" 
+                                 HeightRequest="35" 
+                                 WidthRequest="35" 
+                                 BorderColor="Transparent"
+                                 BackgroundColor="White" 
+                                 Padding="0" 
+                                 Margin="12,0,0,0" 
+                                 Clicked="OnExitButtonClicked"/>
+                </StackLayout>
             </StackLayout>
             <Label Text="PUNTAJE" FontSize="25" TextColor="Black" HorizontalOptions="Center" Padding="35" 
-       HorizontalTextAlignment="Center"/>
+                   HorizontalTextAlignment="Center"/>
             <Label Text="0" HorizontalTextAlignment="Center" FontSize="50" TextColor="Black"/>
-            <ImageButton Source="mandarina.jpg" Aspect="Fill" HeightRequest="225" WidthRequest="200" HorizontalOptions="Center"/>
-
+            <ImageButton Source="mandarina.jpg" Aspect="Fill" HeightRequest="225" WidthRequest="200" HorizontalOptions="Center"
+                         Command="{Binding ImageClickedCommand}"/>
             <Label Text="La calabaza, me ha copiado el color, la naranja el sabor, pero sobre todo yo soy la mejor" 
-       TextColor="Black" FontSize="Body" Padding="25"/>
-            <Button Text="Mandarina" HorizontalOptions="CenterAndExpand" BackgroundColor="LightGray" TextColor="Black"
-        CornerRadius="15" WidthRequest="200" HeightRequest="50"/>
-            <Button Text="Zanahoria" HorizontalOptions="CenterAndExpand" BackgroundColor="LightGray" TextColor="Black"
-        CornerRadius="15" WidthRequest="200" HeightRequest="50"/>
-            <Button Text="Uva" HorizontalOptions="CenterAndExpand" BackgroundColor="LightGray" TextColor="Black"
-        CornerRadius="15" WidthRequest="200" HeightRequest="50"/>
-            <Button Text="Pera" HorizontalOptions="CenterAndExpand" BackgroundColor="LightGray" TextColor="Black"
-        CornerRadius="15" WidthRequest="200" HeightRequest="50"/>
+                   TextColor="Black" FontSize="Body" Padding="25"/>
+            <Button Text="Mandarina" HorizontalOptions="CenterAndExpand" BackgroundColor="{Binding MandarinaButtonColor}" TextColor="Black"
+                    BorderWidth="2" CornerRadius="15" WidthRequest="200" HeightRequest="40" Command="{Binding CorrectButtonCommand}"/>
+            <Button Text="Zanahoria" HorizontalOptions="CenterAndExpand" BackgroundColor="{Binding ZanahoriaButtonColor}" TextColor="Black"
+                    BorderWidth="2" CornerRadius="15" WidthRequest="200" HeightRequest="40" Command="{Binding IncorrectButtonCommand}" CommandParameter="Zanahoria"/>
+            <Button Text="Uva" HorizontalOptions="CenterAndExpand" BackgroundColor="{Binding UvaButtonColor}" TextColor="Black"
+                    BorderWidth="2" CornerRadius="15" WidthRequest="200" HeightRequest="40" Command="{Binding IncorrectButtonCommand}" CommandParameter="Uva"/>
+            <Button Text="Pera" HorizontalOptions="CenterAndExpand" BackgroundColor="{Binding PeraButtonColor}" TextColor="Black"
+                    BorderWidth="2" CornerRadius="15" WidthRequest="200" HeightRequest="40" Command="{Binding IncorrectButtonCommand}" CommandParameter="Pera"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

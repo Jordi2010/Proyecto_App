@@ -4,14 +4,25 @@
              x:Class="zionAppSensorial.views.pantallas.niveles">
     <ContentPage.Content>
         <StackLayout BackgroundColor="White">
+            <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" Margin="0,35,0,0">
+                <ImageButton Source="iconosalida.png" 
+                             Aspect="Fill" 
+                             HeightRequest="35" 
+                             WidthRequest="35" 
+                             BorderColor="Transparent"
+                             BackgroundColor="White" 
+                             Padding="0" 
+                             Margin="12,0,0,0" 
+                             Clicked="OnExitButtonClickedNiveles"/>
+            </StackLayout>
             <Image Source="splashanimal.png" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" 
-       HeightRequest="225" WidthRequest="225"/>
+                   HeightRequest="225" WidthRequest="225"/>
             <Button Text="Fácil" TextColor="Black" BackgroundColor="White" WidthRequest="190" HeightRequest="60"
-        CornerRadius="15" BorderWidth="1" BorderColor="Green" HorizontalOptions="Center"/>
+                    CornerRadius="15" BorderWidth="1" BorderColor="Green" HorizontalOptions="Center" Clicked="OnButtonClickedEasy"/>
             <Button Text="Medio" TextColor="Black" BackgroundColor="White" WidthRequest="190" HeightRequest="60"
-        CornerRadius="15" BorderWidth="1" BorderColor="Green" HorizontalOptions="Center"/>
+                    CornerRadius="15" BorderWidth="1" BorderColor="Green" HorizontalOptions="Center" Clicked="OnButtonClickedMiddle"/>
             <Button Text="Difícil" TextColor="Black" BackgroundColor="White" WidthRequest="190" HeightRequest="60" 
-        CornerRadius="15" BorderWidth="1" BorderColor="Green" HorizontalOptions="Center"/>
+                    CornerRadius="15" BorderWidth="1" BorderColor="Green" HorizontalOptions="Center" Clicked="OnButtonClickedDifficult"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

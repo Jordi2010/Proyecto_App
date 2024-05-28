@@ -6,34 +6,41 @@
         <StackLayout BackgroundColor="White" Padding="10">
             <StackLayout HorizontalOptions="Start" VerticalOptions="Start">
                 <ImageButton Source="iconosalida.png" Aspect="AspectFit" HeightRequest="50" WidthRequest="50" BorderColor="Transparent"
-                                 BackgroundColor="White" Padding="10"/>
+                             BackgroundColor="White" Padding="10" Clicked="OnExitButtonClicked"/>
             </StackLayout>
-            <Label Text="PUNTAJE" FontSize="25" TextColor="Black" HorizontalOptions="Center" Padding="0"/>
-            <Label Text="0" HorizontalTextAlignment="Center" FontSize="50" TextColor="Black"/>
-            <ImageButton Source="avestruz.jpg" Aspect="Fill" HeightRequest="195" HorizontalOptions="Center" WidthRequest="190"/>
+            <Label Text="PUNTAJE" FontSize="25" TextColor="Black" HorizontalOptions="Center" Padding="3"/>
+            <Label Text="0" HorizontalTextAlignment="Center" FontSize="50" TextColor="Black" BindingContext="{Binding Score}"/>
+            <ImageButton Source="avestruz.jpg" Aspect="Fill" HeightRequest="195" HorizontalOptions="Center" WidthRequest="190" Command="{Binding ImageClickedCommand}"/>
             <Label Text="Es el ave más grande del mundo con grandes patas y es conocida por no volar y tener plumas muy suaves." TextColor="Black" 
-                       FontSize="Body" HorizontalTextAlignment="Center" Padding="25"/>
+                   FontSize="Body" HorizontalTextAlignment="Center" Padding="25"/>
             <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
-                <Button Text="Ganso" TextColor="Black" BackgroundColor="LightGray"
-                            BorderWidth="2" CornerRadius="15" WidthRequest="150" HeightRequest="50"/>
-                <Button Text="Avestruz" TextColor="Black" BackgroundColor="LightGray"
-                            BorderWidth="2" CornerRadius="15" WidthRequest="150" HeightRequest="50" Margin="10,0,0,0"/>
+                <Button Text="Ganso" TextColor="Black" BackgroundColor="{Binding GansoButtonColor}"
+                        Command="{Binding IncorrectButtonCommand}" CommandParameter="Ganso"
+                        BorderWidth="2" CornerRadius="15" WidthRequest="150" HeightRequest="50"/>
+                <Button Text="Avestruz" TextColor="Black" BackgroundColor="{Binding AvestruzButtonColor}"
+                        Command="{Binding AvestruzButtonClickedCommand}"
+                        BorderWidth="2" CornerRadius="15" WidthRequest="150" HeightRequest="50" Margin="10,0,0,0"/>
             </StackLayout>
             <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
-                <Button Text="Gallo jiro" TextColor="Black" BackgroundColor="LightGray" 
-                            BorderWidth="2" CornerRadius="15" WidthRequest="150" HeightRequest="50"/>
-                <Button Text="Pavo Real" TextColor="Black" BackgroundColor="LightGray" 
-                            BorderWidth="2" CornerRadius="15" WidthRequest="150" HeightRequest="50" Margin="10,0,0,0"/>
+                <Button Text="Gallo jiro" TextColor="Black" BackgroundColor="{Binding GalloJiroButtonColor}"
+                        Command="{Binding IncorrectButtonCommand}" CommandParameter="GalloJiro"
+                        BorderWidth="2" CornerRadius="15" WidthRequest="150" HeightRequest="50"/>
+                <Button Text="Pavo Real" TextColor="Black" BackgroundColor="{Binding PavoRealButtonColor}"
+                        Command="{Binding IncorrectButtonCommand}" CommandParameter="PavoReal"
+                        BorderWidth="2" CornerRadius="15" WidthRequest="150" HeightRequest="50" Margin="10,0,0,0"/>
             </StackLayout>
             <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
-                <Button Text="Gallo" TextColor="Black" BackgroundColor="LightGray" 
-                            BorderWidth="2" CornerRadius="15" WidthRequest="150" HeightRequest="50"/>
-                <Button Text="Perico" TextColor="Black" BackgroundColor="LightGray" 
-                            BorderWidth="2" CornerRadius="15" WidthRequest="150" HeightRequest="50" Margin="10,0,0,0"/>
+                <Button Text="Gallo" TextColor="Black" BackgroundColor="{Binding GalloButtonColor}"
+                        Command="{Binding IncorrectButtonCommand}" CommandParameter="Gallo"
+                        BorderWidth="2" CornerRadius="15" WidthRequest="150" HeightRequest="50"/>
+                <Button Text="Perico" TextColor="Black" BackgroundColor="{Binding PericoButtonColor}"
+                        Command="{Binding IncorrectButtonCommand}" CommandParameter="Perico"
+                        BorderWidth="2" CornerRadius="15" WidthRequest="150" HeightRequest="50" Margin="10,0,0,0"/>
             </StackLayout>
             <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
-                <Button Text="Pollito" TextColor="Black" BackgroundColor="LightGray" 
-                            BorderWidth="2" CornerRadius="15" WidthRequest="150" HeightRequest="50"/>
+                <Button Text="Pollito" TextColor="Black" BackgroundColor="{Binding PollitoButtonColor}"
+                        Command="{Binding IncorrectButtonCommand}" CommandParameter="Pollito"
+                        BorderWidth="2" CornerRadius="15" WidthRequest="150" HeightRequest="50"/>
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>

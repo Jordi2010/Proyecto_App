@@ -5,23 +5,31 @@
     <ContentPage.Content>
         <StackLayout BackgroundColor="White">
             <StackLayout Orientation="Horizontal">
-
-                <ImageButton Source="iconosalida.png" Aspect="Fill" HeightRequest="35" WidthRequest="35" BorderColor="Transparent"
-      VerticalOptions="Center" BackgroundColor="White" Padding="10,25,10,10" Margin="12,0,0,0"/>
-
+                <StackLayout HorizontalOptions="Start">
+                    <ImageButton Source="iconosalida.png" 
+  Aspect="Fill" 
+  HeightRequest="35" 
+  WidthRequest="35" 
+  BorderColor="Transparent"
+  BackgroundColor="White" 
+  Padding="0" 
+  Margin="12,0,0,0" 
+  Clicked="OnExitButtonClicked"/>
+                </StackLayout>
             </StackLayout>
             <Label Text="PUNTAJE" FontSize="25" TextColor="Black" HorizontalOptions="Center" Padding="35"/>
             <Label Text="0" HorizontalTextAlignment="Center" FontSize="50" TextColor="Black"/>
-            <ImageButton Source="astucia.jpg" Aspect="Fill" HeightRequest="260" HorizontalOptions="Center" WidthRequest="225"/>
-
+            <ImageButton Source="astucia.jpg" Aspect="Fill" HeightRequest="150" HorizontalOptions="Center" WidthRequest="150"
+                         Command="{Binding ImageClickedCommand}"/>
             <Label Text="Es adorable, es muy astuto y tiene 9 vidas"
-       TextColor="Black" HorizontalOptions="Center" Padding="50" HorizontalTextAlignment="Center" FontSize="Body"/>
-            <Button Text="Gato" HorizontalOptions="CenterAndExpand" TextColor="Black" BackgroundColor="LightGray"
-        BorderWidth="2" CornerRadius="15" WidthRequest="200" HeightRequest="50"/>
-            <Button Text="León" HorizontalOptions="CenterAndExpand" TextColor="Black" BackgroundColor="LightGray"
-        BorderWidth="2" CornerRadius="15" WidthRequest="200" HeightRequest="50"/>
-            <Button Text="Amadillo" HorizontalOptions="CenterAndExpand" TextColor="Black" BackgroundColor="LightGray"
-        BorderWidth="2" CornerRadius="15" WidthRequest="200" HeightRequest="50"/>
+                   TextColor="Black" HorizontalOptions="Center" Padding="50" HorizontalTextAlignment="Center" FontSize="Body"/>
+            <Button x:Name="GatoButton" Text="Gato" HorizontalOptions="CenterAndExpand" TextColor="Black" BackgroundColor="{Binding GatoButtonColor}"
+                    BorderWidth="2" CornerRadius="15" WidthRequest="200" HeightRequest="50" Command="{Binding CorrectButtonCommand}"/>
+            <Button x:Name="LeonButton" Text="León" HorizontalOptions="CenterAndExpand" TextColor="Black" BackgroundColor="{Binding LeonButtonColor}"
+                    BorderWidth="2" CornerRadius="15" WidthRequest="200" HeightRequest="50" Command="{Binding IncorrectButtonCommand}" CommandParameter="Leon"/>
+            <Button x:Name="AmadilloButton" Text="Amadillo" HorizontalOptions="CenterAndExpand" TextColor="Black" BackgroundColor="{Binding AmadilloButtonColor}"
+                    BorderWidth="2" CornerRadius="15" WidthRequest="200" HeightRequest="50" Command="{Binding IncorrectButtonCommand}" CommandParameter="Amadillo"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
+

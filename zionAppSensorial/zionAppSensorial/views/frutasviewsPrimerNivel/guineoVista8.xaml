@@ -4,26 +4,30 @@
              x:Class="zionAppSensorial.views.frutasviews.Pantalla8">
     <ContentPage.Content>
         <StackLayout BackgroundColor="White">
-            <StackLayout Orientation="Horizontal">
-
-                <ImageButton Source="iconosalida.png" Aspect="Fill" HeightRequest="35" WidthRequest="35" BorderColor="Transparent"
-      VerticalOptions="Center" BackgroundColor="White" Padding="10,25,10,10" Margin="12,0,0,0"/>
-
+            <StackLayout HorizontalOptions="Start">
+                <ImageButton Source="iconosalida.png" 
+                             Aspect="Fill" 
+                             HeightRequest="35" 
+                             WidthRequest="35" 
+                             BorderColor="Transparent"
+                             BackgroundColor="White" 
+                             Padding="0" 
+                             Margin="12,0,0,0" 
+                             Clicked="OnExitButtonClicked"/>
             </StackLayout>
-            <Label Text="PUNTAJE" TextColor="Black" FontSize="25" HorizontalOptions="Center" Padding="35" HorizontalTextAlignment="Center"/>
+            <Label Text="PUNTAJE" FontSize="25" TextColor="Black" HorizontalOptions="Center" Padding="35"/>
             <Label Text="0" HorizontalTextAlignment="Center" FontSize="50" TextColor="Black"/>
-            <ImageButton Source="guineoo.jpg" Aspect="Fill" HeightRequest="250" WidthRequest="250" HorizontalOptions="Center"/>
-
-            <Label Text="Amarillo por fuera y blanco por dentro, tienes que pelarlo para comerlo"
-       TextColor="Black" FontSize="Body" HorizontalTextAlignment="Center" Padding="25"/>
-            <Button Text="Aguacate" HorizontalOptions="CenterAndExpand" BackgroundColor="LightGray" TextColor="Black"
-        CornerRadius="15" WidthRequest="200" HeightRequest="50"/>
-            <Button Text="Guineo" HorizontalOptions="CenterAndExpand" BackgroundColor="LightGray" TextColor="Black"
-        CornerRadius="15" WidthRequest="200" HeightRequest="50"/>
-            <Button Text="Sandia" HorizontalOptions="CenterAndExpand" BackgroundColor="LightGray" TextColor="Black"
-        CornerRadius="15" WidthRequest="200" HeightRequest="50"/>
-            <Button Text="Melón" HorizontalOptions="CenterAndExpand" BackgroundColor="LightGray" TextColor="Black"
-        CornerRadius="15" WidthRequest="200" HeightRequest="50"/>
+            <ImageButton Source="guineoo.jpg" Aspect="Fill" HeightRequest="250" WidthRequest="250" HorizontalOptions="Center" Command="{Binding ImageClickedCommand}"/>
+            <Label Text="Soy amarillo y curvo, me encuentran en los trópicos y soy rico en potasio"
+                   TextColor="Black" FontSize="Body" HorizontalTextAlignment="Center" Padding="25"/>
+            <Button Text="Guineo" HorizontalOptions="CenterAndExpand" BackgroundColor="{Binding GuineoButtonColor}" TextColor="Black"
+                    BorderWidth="2" CornerRadius="15" WidthRequest="200" HeightRequest="40" Command="{Binding CorrectButtonCommand}"/>
+            <Button Text="Manzana" HorizontalOptions="CenterAndExpand" BackgroundColor="{Binding ManzanaButtonColor}" TextColor="Black"
+                    BorderWidth="2" CornerRadius="15" WidthRequest="200" HeightRequest="40" Command="{Binding IncorrectButtonCommand}" CommandParameter="Manzana"/>
+            <Button Text="Pera" HorizontalOptions="CenterAndExpand" BackgroundColor="{Binding PeraButtonColor}" TextColor="Black"
+                    BorderWidth="2" CornerRadius="15" WidthRequest="200" HeightRequest="40" Command="{Binding IncorrectButtonCommand}" CommandParameter="Pera"/>
+            <Button Text="Uva" HorizontalOptions="CenterAndExpand" BackgroundColor="{Binding UvaButtonColor}" TextColor="Black"
+                    BorderWidth="2" CornerRadius="15" WidthRequest="200" HeightRequest="40" Command="{Binding IncorrectButtonCommand}" CommandParameter="Uva"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

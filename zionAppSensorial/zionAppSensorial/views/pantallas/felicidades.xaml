@@ -4,30 +4,26 @@
              x:Class="zionAppSensorial.views.pantallas.felicidades">
     <ContentPage.Content>
         <Frame BackgroundColor="White"
-      CornerRadius="5"
-      Padding="20">
+               CornerRadius="5"
+               Padding="20">
             <StackLayout VerticalOptions="Center">
                 <Image Source="imgfelicidades.jpg" 
-               HorizontalOptions="Center" 
-               VerticalOptions="Center" />
-
+                       HorizontalOptions="Center" 
+                       VerticalOptions="Center" />
                 <Label Text="Has ganado y completado exitosamente esta dificultad, obteniendo un total de 500 puntos"
-               FontSize="24"
-               FontAttributes="Bold"
-               TextColor="Black"
-               HorizontalOptions="Center" />
-
+                       FontSize="24"
+                       FontAttributes="Bold"
+                       TextColor="Black"
+                       HorizontalOptions="Center" />
                 <ImageButton Source="imgpuntaje.jpg" Aspect="Fill" HeightRequest="68" WidthRequest="328"
-                     HorizontalOptions="Center"
-                     />
-
+                             HorizontalOptions="Center"
+                             Clicked="OnImgPuntajeClicked"/>
                 <ImageButton Source="imgdificultades.png" Aspect="Fill" HeightRequest="68" WidthRequest="328"
-                     HorizontalOptions="Center"
-                     />
-
+                             HorizontalOptions="Center"
+                             Clicked="OnImgDificultadesClicked"/>
                 <ImageButton Source="imgsecciones.png" Aspect="Fill" HeightRequest="68" WidthRequest="328"
-                     HorizontalOptions="Center"
-                     />
+                             HorizontalOptions="Center"
+                             Clicked="OnImgSeccionesClicked"/>
             </StackLayout>
         </Frame>
     </ContentPage.Content>

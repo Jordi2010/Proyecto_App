@@ -14,7 +14,14 @@ namespace zionAppSensorial.views.pantallas
 	{
 		public tutorialVista ()
 		{
-			InitializeComponent ();
+            // Eliminar el botón de retroceso por defecto
+            NavigationPage.SetHasBackButton(this, false);
+            InitializeComponent ();
 		}
-	}
+
+        private async void OnExitButtonClickedTutorial(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new inicio());
+        }
+    }
 }

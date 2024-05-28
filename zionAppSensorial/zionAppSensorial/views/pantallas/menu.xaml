@@ -4,39 +4,84 @@
              x:Class="zionAppSensorial.views.pantallas.menu">
     <ContentPage.Content>
         <StackLayout BackgroundColor="White">
+            <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" Margin="0,35,0,0">
+                <ImageButton Source="iconosalida.png" 
+                             Aspect="Fill" 
+                             HeightRequest="35" 
+                             WidthRequest="35" 
+                             BorderColor="Transparent"
+                             BackgroundColor="White" 
+                             Padding="0" 
+                             Margin="12,0,0,0" 
+                             Clicked="OnExitButtonClickedInicio"/>
+            </StackLayout>
+
             <Label Text="Quiero aprender..."
-    TextColor="Black"
-    FontSize="30" Padding="50" Margin="25,35,0,0"/>
+                   TextColor="Black"
+                   FontSize="30" 
+                   HorizontalOptions="Center"
+                   Margin="25,20,25,0"/>
 
-            <Button 
-        Text="Animales"
-        TextColor="Black"
-        HorizontalOptions="CenterAndExpand" BorderColor="Black" BorderWidth="1" VerticalOptions="Center"
-        BackgroundColor="Yellow" CornerRadius="12" WidthRequest="300" HeightRequest="50" Margin="0,100,0,0"/>
-            <Button 
-        Text="Frutas"
-        TextColor="Black"
-        HorizontalOptions="CenterAndExpand" BorderColor="Black" BorderWidth="1"
-        BackgroundColor="Pink" CornerRadius="12" WidthRequest="300" HeightRequest="50" Margin="0,30,0,0"/>
-            <Button 
-        Text="Obtejos"
-        TextColor="Black" BorderColor="Black" BorderWidth="1"
-        BackgroundColor="CadetBlue" HorizontalOptions="CenterAndExpand"
-        CornerRadius="12" WidthRequest="300" HeightRequest="50" Margin="0,30,0,0"/>
+            <Button Text="Animales"
+                    TextColor="Black"
+                    HorizontalOptions="CenterAndExpand" 
+                    BorderColor="Black" 
+                    BorderWidth="1" 
+                    VerticalOptions="Center"
+                    BackgroundColor="Yellow" 
+                    CornerRadius="12" 
+                    WidthRequest="300" 
+                    HeightRequest="50" 
+                    Margin="0,20,0,0"
+                    Clicked="OnAnimalesButtonClicked"/>
 
+            <Button Text="Frutas"
+                    TextColor="Black"
+                    HorizontalOptions="CenterAndExpand" 
+                    BorderColor="Black" 
+                    BorderWidth="1"
+                    BackgroundColor="Pink" 
+                    CornerRadius="12" 
+                    WidthRequest="300" 
+                    HeightRequest="50" 
+                    Margin="0,20,0,0"
+                    Clicked="OnFruitsButtonClicked"/>
 
+            <Button Text="Objetos"
+                    TextColor="Black" 
+                    BorderColor="Black" 
+                    BorderWidth="1"
+                    BackgroundColor="CadetBlue" 
+                    HorizontalOptions="CenterAndExpand"
+                    CornerRadius="12" 
+                    WidthRequest="300" 
+                    HeightRequest="50" 
+                    Margin="0,20,0,0"/>
 
             <Button Text="Tabla de puntajes"
-        TextColor="Black"
-        BackgroundColor="Orange"
-        VerticalOptions="EndAndExpand"
-        HorizontalOptions="CenterAndExpand" BorderColor="Black" BorderWidth="1"
-        CornerRadius="12" WidthRequest="300" HeightRequest="50" Margin="0,25,0,0"/>
+                    TextColor="Black"
+                    BackgroundColor="Orange"
+                    VerticalOptions="EndAndExpand"
+                    HorizontalOptions="CenterAndExpand" 
+                    BorderColor="Black" 
+                    BorderWidth="1"
+                    CornerRadius="12" 
+                    WidthRequest="300" 
+                    HeightRequest="50" 
+                    Margin="0,20,0,0"
+                    Clicked="ViewButtonClickedTabla"/>
+
             <Button Text="Volver al menu"
-        TextColor="Black"
-        HorizontalOptions="CenterAndExpand"
-        BackgroundColor="DarkRed" BorderColor="Black" BorderWidth="1"
-        CornerRadius="12" WidthRequest="300" HeightRequest="50" Margin="0,30,0,100"/>
+                    TextColor="Black"
+                    HorizontalOptions="CenterAndExpand"
+                    BackgroundColor="DarkRed" 
+                    BorderColor="Black" 
+                    BorderWidth="1"
+                    CornerRadius="12" 
+                    WidthRequest="300" 
+                    HeightRequest="50" 
+                    Margin="0,20,0,50"
+                    Clicked="OnExitButtonClickedMenu"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

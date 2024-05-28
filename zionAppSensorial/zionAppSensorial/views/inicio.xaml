@@ -6,16 +6,18 @@
         <StackLayout BackgroundColor="White">
             <Image Source="MyIcono" Aspect="Fill" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"
        HeightRequest="225" WidthRequest="225" />
-
+            <!-- Creando eventos de click-->
             <Button Text="Jugar" BackgroundColor="Yellow" TextColor="Black" FontSize="20"
-        CornerRadius="15" WidthRequest="200" HeightRequest="60"
-        HorizontalOptions="Center"/>
+                    CornerRadius="15" WidthRequest="200" HeightRequest="60"
+                    HorizontalOptions="Center"
+                    Clicked="OnPlayButtonClicked"/>
 
             <Button Text="Cómo jugar?" TextColor="White" FontSize="20"
-        BackgroundColor="Blue"
-        CornerRadius="15" WidthRequest="300" HeightRequest="60"
-        VerticalOptions="CenterAndExpand"
-        HorizontalOptions="CenterAndExpand"/>
+                    BackgroundColor="Blue"
+                    CornerRadius="15" WidthRequest="300" HeightRequest="60"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="CenterAndExpand"
+                    Clicked="OnHowToPlayButtonClicked"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

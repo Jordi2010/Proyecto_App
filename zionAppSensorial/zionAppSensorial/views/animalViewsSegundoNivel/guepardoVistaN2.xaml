@@ -4,31 +4,101 @@
              x:Class="zionAppSensorial.views.animalViewsSegundoNivel.guepardoVistaN2">
     <ContentPage.Content>
         <StackLayout BackgroundColor="White" Padding="20">
-            <StackLayout Orientation="Horizontal" HorizontalOptions="End">
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Start">
+                <StackLayout HorizontalOptions="Start">
+                    <ImageButton Source="iconosalida.png" 
+                                 Aspect="Fill" 
+                                 HeightRequest="35" 
+                                 WidthRequest="35" 
+                                 BorderColor="Transparent"
+                                 BackgroundColor="White" 
+                                 Padding="0" 
+                                 Margin="12,0,0,0" 
+                                 Clicked="OnExitButtonClicked"/>
+                </StackLayout>
+            </StackLayout>
 
-                <ImageButton Source="iconosalida.png" Aspect="Fill" HeightRequest="35" WidthRequest="35" BorderColor="Transparent"
-      VerticalOptions="Center" BackgroundColor="White" Padding="10,25,10,10" Margin="12,0,0,0"/>
-            </StackLayout>
-            <Label Text="PUNTAJE" FontSize="25" TextColor="Black" HorizontalOptions="Center"/>
-            <Label Text="0" HorizontalTextAlignment="Center" FontSize="50" TextColor="Black"/>
-            <ImageButton Source="guepardoN2.png" Aspect="Fill" HeightRequest="200" HorizontalOptions="CenterAndExpand" WidthRequest="225"/>
-            <Label Text="Con manchas veloces y un rugido fugaz, en la sabana reino, ¿qué soy?"
-       TextColor="Black" HorizontalOptions="Center" Padding="20" FontSize="Body"/>
+            <Label Text="PUNTAJE" 
+                   FontSize="25" 
+                   TextColor="Black" 
+                   HorizontalOptions="Center"/>
+
+            <Label Text="0" 
+                   HorizontalTextAlignment="Center" 
+                   FontSize="50" 
+                   TextColor="Black"/>
+
+            <ImageButton Source="guepardoN2.png" 
+                         Aspect="Fill" 
+                         HeightRequest="200" 
+                         HorizontalOptions="CenterAndExpand" 
+                         WidthRequest="225"
+                         Command="{Binding ImageClickedCommand}"/>
+
+            <Label Text="Con patas veloces y manchas distintivas, soy el más rápido de las llanuras, ¿quién soy?"
+                   TextColor="Black" 
+                   HorizontalOptions="Center" 
+                   Padding="20" 
+                   FontSize="Body"/>
+
             <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
-                <Button Text="León" TextColor="Black" BackgroundColor="LightGray"
-        BorderWidth="2" CornerRadius="15" WidthRequest="150" HeightRequest="50" Margin="5"/>
-                <Button Text="Gato" TextColor="Black" BackgroundColor="LightGray"
-        BorderWidth="2" CornerRadius="15" WidthRequest="150" HeightRequest="50" Margin="5"/>
+                <Button Text="Tigre" 
+                        TextColor="Black" 
+                        BackgroundColor="{Binding TigreButtonColor}"
+                        Command="{Binding IncorrectButtonCommand}" 
+                        CommandParameter="Tigre"
+                        BorderWidth="2" 
+                        CornerRadius="15" 
+                        WidthRequest="150" 
+                        HeightRequest="50" 
+                        Margin="5"/>
+
+                <Button Text="León" 
+                        TextColor="Black" 
+                        BackgroundColor="{Binding LeonButtonColor}"
+                        Command="{Binding IncorrectButtonCommand}" 
+                        CommandParameter="Leon"
+                        BorderWidth="2" 
+                        CornerRadius="15" 
+                        WidthRequest="150" 
+                        HeightRequest="50" 
+                        Margin="5"/>
             </StackLayout>
+
             <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
-                <Button Text="Puma" TextColor="Black" BackgroundColor="LightGray"
-        BorderWidth="2" CornerRadius="15" WidthRequest="150" HeightRequest="50" Margin="5"/>
-                <Button Text="Guepardo" TextColor="Black" BackgroundColor="LightGray"
-BorderWidth="2" CornerRadius="15" WidthRequest="150" HeightRequest="50" Margin="5"/>
+                <Button Text="Gato" 
+                        TextColor="Black" 
+                        BackgroundColor="{Binding GatoButtonColor}"
+                        Command="{Binding IncorrectButtonCommand}" 
+                        CommandParameter="Gato"
+                        BorderWidth="2" 
+                        CornerRadius="15" 
+                        WidthRequest="150" 
+                        HeightRequest="50" 
+                        Margin="5"/>
+
+                <Button Text="Guepardo" 
+                        TextColor="Black" 
+                        BackgroundColor="{Binding GuepardoButtonColor}"
+                        Command="{Binding GuepardoButtonClickedCommand}" 
+                        BorderWidth="2" 
+                        CornerRadius="15" 
+                        WidthRequest="150" 
+                        HeightRequest="50" 
+                        Margin="5"/>
             </StackLayout>
+
             <StackLayout HorizontalOptions="CenterAndExpand">
-                <Button Text="Tigre" TextColor="Black" BackgroundColor="LightGray"
-BorderWidth="2" CornerRadius="15" WidthRequest="150" HeightRequest="50" Margin="5"/>
+                <Button Text="Puma" 
+                        TextColor="Black" 
+                        BackgroundColor="{Binding PumaButtonColor}"
+                        Command="{Binding IncorrectButtonCommand}" 
+                        CommandParameter="Puma"
+                        BorderWidth="2" 
+                        CornerRadius="15" 
+                        WidthRequest="150" 
+                        HeightRequest="50" 
+                        Margin="5"/>
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>

@@ -1,27 +1,39 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:zionAppSensorial.ViewModels"
              x:Class="zionAppSensorial.views.animalviews.Pantalla5">
+    <ContentPage.BindingContext>
+        <vm:Pantalla5ViewModel />
+    </ContentPage.BindingContext>
     <ContentPage.Content>
         <StackLayout BackgroundColor="White">
             <StackLayout Orientation="Horizontal">
-
-                <ImageButton Source="iconosalida.png" Aspect="Fill" HeightRequest="35" WidthRequest="35" BorderColor="Transparent"
-      VerticalOptions="Center" BackgroundColor="White" Padding="10,25,10,10" Margin="12,0,0,0"/>
-
+                <StackLayout HorizontalOptions="Start">
+                    <ImageButton Source="iconosalida.png" 
+  Aspect="Fill" 
+  HeightRequest="35" 
+  WidthRequest="35" 
+  BorderColor="Transparent"
+  BackgroundColor="White" 
+  Padding="0" 
+  Margin="12,0,0,0" 
+  Clicked="OnExitButtonClicked"/>
+                </StackLayout>
             </StackLayout>
             <Label Text="PUNTAJE" FontSize="25" TextColor="Black" HorizontalOptions="Center" Padding="35" HorizontalTextAlignment="Center"/>
             <Label Text="0" HorizontalTextAlignment="Center" FontSize="50" TextColor="Black"/>
-            <ImageButton Source="Elephant.jpg" Aspect="Fill" HeightRequest="200" WidthRequest="240" HorizontalOptions="Center"/>
-
+            <ImageButton Source="Elephant.jpg" Aspect="Fill" HeightRequest="200" WidthRequest="240" HorizontalOptions="Center"
+                         Command="{Binding ImageClickedCommand}"/>
             <Label Text="Es enorme, tiene una trompa larga y escucha muy bien" 
-        TextColor="Black" FontSize="Body" HorizontalTextAlignment="Center" Padding="35"/>
-            <Button Text="Elefante" HorizontalOptions="CenterAndExpand" BackgroundColor="LightGray" TextColor="Black"
-         BorderWidth="2" CornerRadius="15" WidthRequest="200" HeightRequest="50"/>
-            <Button Text="El mono" HorizontalOptions="CenterAndExpand" BackgroundColor="LightGray" TextColor="Black"
-         BorderWidth="2" CornerRadius="15" WidthRequest="200" HeightRequest="50"/>
-            <Button Text="Ardilla" HorizontalOptions="CenterAndExpand" BackgroundColor="LightGray" TextColor="Black"
-         BorderWidth="2" CornerRadius="15" WidthRequest="200" HeightRequest="50"/>
+                   TextColor="Black" FontSize="Body" HorizontalTextAlignment="Center" Padding="35"/>
+            <Button x:Name="ElefanteButton" Text="Elefante" HorizontalOptions="CenterAndExpand" BackgroundColor="{Binding ElefanteButtonColor}" TextColor="Black"
+                    BorderWidth="2" CornerRadius="15" WidthRequest="200" HeightRequest="50" Command="{Binding CorrectButtonCommand}"/>
+            <Button x:Name="MonoButton" Text="El mono" HorizontalOptions="CenterAndExpand" BackgroundColor="{Binding MonoButtonColor}" TextColor="Black"
+                    BorderWidth="2" CornerRadius="15" WidthRequest="200" HeightRequest="50" Command="{Binding IncorrectButtonCommand}" CommandParameter="Mono"/>
+            <Button x:Name="ArdillaButton" Text="Ardilla" HorizontalOptions="CenterAndExpand" BackgroundColor="{Binding ArdillaButtonColor}" TextColor="Black"
+                    BorderWidth="2" CornerRadius="15" WidthRequest="200" HeightRequest="50" Command="{Binding IncorrectButtonCommand}" CommandParameter="Ardilla"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
+
