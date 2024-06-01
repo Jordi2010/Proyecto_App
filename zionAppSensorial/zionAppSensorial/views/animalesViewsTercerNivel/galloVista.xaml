@@ -6,34 +6,41 @@
         <StackLayout BackgroundColor="White" Padding="10">
             <StackLayout HorizontalOptions="Start" VerticalOptions="Start">
                 <ImageButton Source="iconosalida.png" Aspect="AspectFit" HeightRequest="50" WidthRequest="50" BorderColor="Transparent"
-                                 BackgroundColor="White" Padding="10"/>
+                             BackgroundColor="White" Padding="10" Clicked="OnExitButtonClicked"/>
             </StackLayout>
             <Label Text="PUNTAJE" FontSize="25" TextColor="Black" HorizontalOptions="Center" Padding="3"/>
-            <Label Text="0" HorizontalTextAlignment="Center" FontSize="50" TextColor="Black"/>
-            <ImageButton Source="gallo.jpg" Aspect="Fill" HeightRequest="195" HorizontalOptions="Center" WidthRequest="190"/>
+            <Label Text="0" HorizontalTextAlignment="Center" FontSize="50" TextColor="Black" BindingContext="{Binding Score}"/>
+            <ImageButton Source="gallo.jpg" Aspect="Fill" HeightRequest="195" HorizontalOptions="Center" WidthRequest="190" Command="{Binding ImageClickedCommand}"/>
             <Label Text="Es conocido por cantar al amanecer y tiene cresta roja en la cabeza." TextColor="Black" 
-                       FontSize="Body" HorizontalTextAlignment="Center" Padding="25"/>
+                   FontSize="Body" HorizontalTextAlignment="Center" Padding="25"/>
             <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
-                <Button Text="Gallo" TextColor="Black" BackgroundColor="LightGray"
-                            BorderWidth="2" CornerRadius="15" WidthRequest="150" HeightRequest="50"/>
-                <Button Text="Gavilán" TextColor="Black" BackgroundColor="LightGray"
-                            BorderWidth="2" CornerRadius="15" WidthRequest="150" HeightRequest="50" Margin="10,0,0,0"/>
+                <Button Text="Gallo" TextColor="Black" BackgroundColor="{Binding GalloButtonColor}"
+                        Command="{Binding GalloButtonClickedCommand}"
+                        BorderWidth="2" CornerRadius="15" WidthRequest="150" HeightRequest="50"/>
+                <Button Text="Gavilán" TextColor="Black" BackgroundColor="{Binding GavilanButtonColor}"
+                        Command="{Binding IncorrectButtonCommand}" CommandParameter="Gavilan"
+                        BorderWidth="2" CornerRadius="15" WidthRequest="150" HeightRequest="50" Margin="10,0,0,0"/>
             </StackLayout>
             <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
-                <Button Text="Pato" TextColor="Black" BackgroundColor="LightGray" 
-                            BorderWidth="2" CornerRadius="15" WidthRequest="150" HeightRequest="50"/>
-                <Button Text="Perico" TextColor="Black" BackgroundColor="LightGray" 
-                            BorderWidth="2" CornerRadius="15" WidthRequest="150" HeightRequest="50" Margin="10,0,0,0"/>
+                <Button Text="Pato" TextColor="Black" BackgroundColor="{Binding PatoButtonColor}"
+                        Command="{Binding IncorrectButtonCommand}" CommandParameter="Pato"
+                        BorderWidth="2" CornerRadius="15" WidthRequest="150" HeightRequest="50"/>
+                <Button Text="Perico" TextColor="Black" BackgroundColor="{Binding PericoButtonColor}"
+                        Command="{Binding IncorrectButtonCommand}" CommandParameter="Perico"
+                        BorderWidth="2" CornerRadius="15" WidthRequest="150" HeightRequest="50" Margin="10,0,0,0"/>
             </StackLayout>
             <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
-                <Button Text="Gallina" TextColor="Black" BackgroundColor="LightGray" 
-                            BorderWidth="2" CornerRadius="15" WidthRequest="150" HeightRequest="50"/>
-                <Button Text="Águila" TextColor="Black" BackgroundColor="LightGray" 
-                            BorderWidth="2" CornerRadius="15" WidthRequest="150" HeightRequest="50" Margin="10,0,0,0"/>
+                <Button Text="Gallina" TextColor="Black" BackgroundColor="{Binding GallinaButtonColor}"
+                        Command="{Binding IncorrectButtonCommand}" CommandParameter="Gallina"
+                        BorderWidth="2" CornerRadius="15" WidthRequest="150" HeightRequest="50"/>
+                <Button Text="Águila" TextColor="Black" BackgroundColor="{Binding AguilaButtonColor}"
+                        Command="{Binding IncorrectButtonCommand}" CommandParameter="Aguila"
+                        BorderWidth="2" CornerRadius="15" WidthRequest="150" HeightRequest="50" Margin="10,0,0,0"/>
             </StackLayout>
             <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
-                <Button Text="Loro" TextColor="Black" BackgroundColor="LightGray" 
-                            BorderWidth="2" CornerRadius="15" WidthRequest="150" HeightRequest="50"/>
+                <Button Text="Loro" TextColor="Black" BackgroundColor="{Binding LoroButtonColor}"
+                        Command="{Binding IncorrectButtonCommand}" CommandParameter="Loro"
+                        BorderWidth="2" CornerRadius="15" WidthRequest="150" HeightRequest="50"/>
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>

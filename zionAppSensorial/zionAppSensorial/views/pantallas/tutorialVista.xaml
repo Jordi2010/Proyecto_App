@@ -6,7 +6,7 @@
             <!-- Imagen en la esquina superior izquierda -->
             <ImageButton Source="iconosalida.png" Aspect="AspectFit" HeightRequest="40" WidthRequest="50" BorderColor="Transparent"
                  BackgroundColor="White" Padding="10"
-                 HorizontalOptions="Start" VerticalOptions="Start"/>
+                 HorizontalOptions="Start" VerticalOptions="Start" Clicked="OnExitButtonClickedTutorial"/>
 
             <!-- Encabezado -->
             <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="Start">

@@ -5,25 +5,32 @@
     <ContentPage.Content>
         <StackLayout BackgroundColor="White">
             <StackLayout Orientation="Horizontal">
-
-                <ImageButton Source="iconosalida.png" Aspect="Fill" HeightRequest="35" WidthRequest="35" BorderColor="Transparent"
-      VerticalOptions="Center" BackgroundColor="White" Padding="10,25,10,10" Margin="12,0,0,0"/>
-
+                <StackLayout HorizontalOptions="Start">
+                    <ImageButton Source="iconosalida.png" 
+Aspect="Fill" 
+HeightRequest="35" 
+WidthRequest="35" 
+BorderColor="Transparent"
+BackgroundColor="White" 
+Padding="0" 
+Margin="12,0,0,0" 
+Clicked="OnExitButtonClicked"/>
+                </StackLayout>
             </StackLayout>
             <Label Text="PUNTAJE" FontSize="25" TextColor="Black" HorizontalOptions="Center" Padding="35"/>
             <Label Text="0" HorizontalTextAlignment="Center" FontSize="50" TextColor="Black"/>
-            <ImageButton Source="fresabig.jpg" Aspect="Fill" HeightRequest="200" HorizontalOptions="Center" WidthRequest="200"/>
-
-            <Label Text="Yo rimo con esa, color de cereza, del suelo a le mesa te doy la sorpresa"
-       TextColor="Black" FontSize="Body" HorizontalTextAlignment="Center" Padding="25"/>
-            <Button Text="Fresa" HorizontalOptions="CenterAndExpand" BackgroundColor="LightGray" TextColor="Black"
-        BorderWidth="2" CornerRadius="15" WidthRequest="200" HeightRequest="50"/>
-            <Button Text="Tomate" HorizontalOptions="CenterAndExpand" BackgroundColor="LightGray" TextColor="Black"
-        BorderWidth="2" CornerRadius="15" WidthRequest="200" HeightRequest="50"/>
-            <Button Text="Perro" HorizontalOptions="CenterAndExpand" BackgroundColor="LightGray" TextColor="Black"
-        BorderWidth="2" CornerRadius="15" WidthRequest="200" HeightRequest="50"/>
-            <Button Text="Sandia" HorizontalOptions="CenterAndExpand" BackgroundColor="LightGray" TextColor="Black"
-        BorderWidth="2" CornerRadius="15" WidthRequest="200" HeightRequest="50"/>
+            <ImageButton Source="fresabig.jpg" Aspect="Fill" HeightRequest="200" HorizontalOptions="Center" WidthRequest="200"
+                         Command="{Binding ImageClickedCommand}"/>
+            <Label Text="Yo rimo con esa, color de cereza, del suelo a la mesa te doy la sorpresa"
+                   TextColor="Black" FontSize="Body" HorizontalTextAlignment="Center" Padding="25"/>
+            <Button Text="Fresa" HorizontalOptions="CenterAndExpand" BackgroundColor="{Binding FresaButtonColor}" TextColor="Black"
+                    BorderWidth="2" CornerRadius="15" WidthRequest="200" HeightRequest="50" Command="{Binding CorrectButtonCommand}"/>
+            <Button Text="Tomate" HorizontalOptions="CenterAndExpand" BackgroundColor="{Binding TomateButtonColor}" TextColor="Black"
+                    BorderWidth="2" CornerRadius="15" WidthRequest="200" HeightRequest="50" Command="{Binding IncorrectButtonCommand}" CommandParameter="Tomate"/>
+            <Button Text="Perro" HorizontalOptions="CenterAndExpand" BackgroundColor="{Binding PerroButtonColor}" TextColor="Black"
+                    BorderWidth="2" CornerRadius="15" WidthRequest="200" HeightRequest="50" Command="{Binding IncorrectButtonCommand}" CommandParameter="Perro"/>
+            <Button Text="Sandia" HorizontalOptions="CenterAndExpand" BackgroundColor="{Binding SandiaButtonColor}" TextColor="Black"
+                    BorderWidth="2" CornerRadius="15" WidthRequest="200" HeightRequest="50" Command="{Binding IncorrectButtonCommand}" CommandParameter="Sandia"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

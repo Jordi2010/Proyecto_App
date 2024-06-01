@@ -18,7 +18,7 @@ namespace zionAppSensorial
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new felicidades());
+            MainPage = new NavigationPage(new inicio());
         }
 
         protected override void OnStart()

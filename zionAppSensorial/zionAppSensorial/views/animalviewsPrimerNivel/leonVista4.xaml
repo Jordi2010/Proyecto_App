@@ -1,27 +1,38 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:zionAppSensorial.ViewModels"
              x:Class="zionAppSensorial.views.animalviews.Pantalla4">
+    <ContentPage.BindingContext>
+        <vm:Pantalla4ViewModel />
+    </ContentPage.BindingContext>
     <ContentPage.Content>
         <StackLayout BackgroundColor="White">
             <StackLayout Orientation="Horizontal">
-
-                <ImageButton Source="iconosalida.png" Aspect="Fill" HeightRequest="35" WidthRequest="35" BorderColor="Transparent"
-      VerticalOptions="Center" BackgroundColor="White" Padding="10,25,10,10" Margin="12,0,0,0"/>
-
+                <StackLayout HorizontalOptions="Start">
+                    <ImageButton Source="iconosalida.png" 
+  Aspect="Fill" 
+  HeightRequest="35" 
+  WidthRequest="35" 
+  BorderColor="Transparent"
+  BackgroundColor="White" 
+  Padding="0" 
+  Margin="12,0,0,0" 
+  Clicked="OnExitButtonClicked"/>
+                </StackLayout>
             </StackLayout>
             <Label Text="PUNTAJE" FontSize="25" TextColor="Black" HorizontalOptions="Center" Padding="35"/>
             <Label Text="0" HorizontalTextAlignment="Center" FontSize="50" TextColor="Black"/>
-            <ImageButton Source="reyleon.jpg" Aspect="Fill" HeightRequest="195" HorizontalOptions="Center" WidthRequest="190"/>
-
-            <Label Text="Pertenece a la realeza, tiene un cabello esplendido y su rujido es feroz" TextColor="Black" 
-        FontSize="Body" HorizontalTextAlignment="Center" Padding="25"/>
-            <Button Text="León" HorizontalOptions="CenterAndExpand" TextColor="Black" BackgroundColor="LightGray"
-        BorderWidth="2" CornerRadius="15" WidthRequest="200" HeightRequest="50"/>
-            <Button Text="Tigre" HorizontalOptions="CenterAndExpand" TextColor="Black" BackgroundColor="LightGray"
-        BorderWidth="2" CornerRadius="15" WidthRequest="200" HeightRequest="50"/>
-            <Button Text="Pulpo" HorizontalOptions="CenterAndExpand" TextColor="Black" BackgroundColor="LightGray" 
-        BorderWidth="2" CornerRadius="15" WidthRequest="200" HeightRequest="50"/>
+            <ImageButton Source="reyleon.jpg" Aspect="Fill" HeightRequest="195" HorizontalOptions="Center" WidthRequest="190"
+                         Command="{Binding ImageClickedCommand}"/>
+            <Label Text="Pertenece a la realeza, tiene un cabello esplendido y su rugido es feroz" TextColor="Black" 
+                   FontSize="Body" HorizontalTextAlignment="Center" Padding="25"/>
+            <Button x:Name="LeonButton" Text="León" HorizontalOptions="CenterAndExpand" TextColor="Black" BackgroundColor="{Binding LeonButtonColor}"
+                    BorderWidth="2" CornerRadius="15" WidthRequest="200" HeightRequest="50" Command="{Binding CorrectButtonCommand}"/>
+            <Button x:Name="TigreButton" Text="Tigre" HorizontalOptions="CenterAndExpand" TextColor="Black" BackgroundColor="{Binding TigreButtonColor}"
+                    BorderWidth="2" CornerRadius="15" WidthRequest="200" HeightRequest="50" Command="{Binding IncorrectButtonCommand}" CommandParameter="Tigre"/>
+            <Button x:Name="PulpoButton" Text="Pulpo" HorizontalOptions="CenterAndExpand" TextColor="Black" BackgroundColor="{Binding PulpoButtonColor}"
+                    BorderWidth="2" CornerRadius="15" WidthRequest="200" HeightRequest="50" Command="{Binding IncorrectButtonCommand}" CommandParameter="Pulpo"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
