@@ -7,15 +7,15 @@
             <Image Source="MyIcono" Aspect="Fill" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"
        HeightRequest="225" WidthRequest="225" />
 
-            <Button Text="Jugar" BackgroundColor="Yellow" TextColor="Black" FontSize="20"
+            <ImageButton Source="imageJugar" Aspect="Fill"
         CornerRadius="15" WidthRequest="200" HeightRequest="60"
         HorizontalOptions="Center"/>
 
-            <Button Text="Cómo jugar?" TextColor="White" FontSize="20"
-        BackgroundColor="Blue"
+            <ImageButton Source="howplay.png" 
         CornerRadius="15" WidthRequest="300" HeightRequest="60"
         VerticalOptions="CenterAndExpand"
         HorizontalOptions="CenterAndExpand"/>
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

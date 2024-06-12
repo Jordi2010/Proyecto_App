@@ -8,35 +8,27 @@
     TextColor="Black"
     FontSize="30" Padding="50" Margin="25,35,0,0"/>
 
-            <Button 
-        Text="Animales"
-        TextColor="Black"
-        HorizontalOptions="CenterAndExpand" BorderColor="Black" BorderWidth="1" VerticalOptions="Center"
-        BackgroundColor="Yellow" CornerRadius="12" WidthRequest="300" HeightRequest="50" Margin="0,100,0,0"/>
-            <Button 
-        Text="Frutas"
-        TextColor="Black"
-        HorizontalOptions="CenterAndExpand" BorderColor="Black" BorderWidth="1"
-        BackgroundColor="Pink" CornerRadius="12" WidthRequest="300" HeightRequest="50" Margin="0,30,0,0"/>
-            <Button 
-        Text="Obtejos"
-        TextColor="Black" BorderColor="Black" BorderWidth="1"
-        BackgroundColor="CadetBlue" HorizontalOptions="CenterAndExpand"
-        CornerRadius="12" WidthRequest="300" HeightRequest="50" Margin="0,30,0,0"/>
+            <ImageButton Source="animalesButton.png" VerticalOptions="Center" 
+             CornerRadius="1" WidthRequest="300" HeightRequest="50" Aspect="Fill" 
+             HorizontalOptions="Center" Margin="0,30,0,0"/>
+
+            <ImageButton Source="frutasButton.png" 
+             CornerRadius="1" WidthRequest="300" HeightRequest="50" Aspect="Fill" 
+             HorizontalOptions="Center" VerticalOptions="Center" Margin="0,30,0,0"/>
+
+            <ImageButton Source="objetosButton.png"
+             CornerRadius="1" WidthRequest="300" HeightRequest="50" Aspect="Fill" HorizontalOptions="Center" VerticalOptions="Center"    
+             Margin="0,30,0,0"/>
 
 
-
-            <Button Text="Tabla de puntajes"
-        TextColor="Black"
-        BackgroundColor="Orange"
+            <ImageButton Source="puntajeButton.png"
         VerticalOptions="EndAndExpand"
-        HorizontalOptions="CenterAndExpand" BorderColor="Black" BorderWidth="1"
-        CornerRadius="12" WidthRequest="300" HeightRequest="50" Margin="0,25,0,0"/>
-            <Button Text="Volver al menu"
-        TextColor="Black"
+        HorizontalOptions="CenterAndExpand" BorderColor="Black"
+        CornerRadius="1" WidthRequest="250" HeightRequest="50" Margin="0,25,0,0" />
+            <ImageButton Source="volvermenuButton.png"
         HorizontalOptions="CenterAndExpand"
-        BackgroundColor="DarkRed" BorderColor="Black" BorderWidth="1"
-        CornerRadius="12" WidthRequest="300" HeightRequest="50" Margin="0,30,0,100"/>
+        CornerRadius="1" WidthRequest="250" HeightRequest="50" Margin="0,30,0,100"/>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

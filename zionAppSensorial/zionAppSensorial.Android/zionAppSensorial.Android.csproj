@@ -84,7 +84,15 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\icon.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\animalesButton.png" />
+    <AndroidResource Include="Resources\drawable\comojugarButton.png" />
+    <AndroidResource Include="Resources\drawable\frutasButton.png" />
+    <AndroidResource Include="Resources\drawable\jugarButton.png" />
+    <AndroidResource Include="Resources\drawable\objetosButton.png" />
+    <AndroidResource Include="Resources\drawable\puntajeButton.png" />
+    <AndroidResource Include="Resources\drawable\volvermenuButton.png" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\zionAppSensorial\zionAppSensorial.csproj">
       <Project>{049C3CDF-16BB-42DC-8CB7-54E6D73F6CB9}</Project>
